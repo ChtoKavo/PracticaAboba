@@ -1,0 +1,70 @@
+body{
+    background-color: #633b16;
+}
+/* Стили для контейнера авторизации */
+.auth-container {
+    max-width: 400px;
+    margin: 90px auto;
+    margin-top: 300px;
+    padding: 40px;
+    border: 1px ;
+    border-radius: 10px;
+    background-color: #c47f3f;
+    text-align: center;
+    color: #F3E9DD;
+}
+
+.auth-container h2 {
+    margin-bottom: 40px;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #217021;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.auth-container button:hover {
+    background-color: #064406;
+}
+
+.auth-container .register-link,
+.auth-container .login-link {
+    margin-top: 20px;
+}
+
+.auth-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+.auth-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

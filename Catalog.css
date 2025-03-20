@@ -1,0 +1,462 @@
+/* Основное */
+body {
+    font-family: Etude Noire;
+    margin: 0;
+    padding: 0;
+    background-color: #5C341B;
+    color: #F3E9DD;
+}
+a {
+    text-decoration: none; /* Убирает подчеркивание */
+    outline: none; /* Убирает обводку при фокусе */
+    color: inherit; /* Наследует цвет текста */
+}
+
+a:focus, a:active {
+    outline: none; /* Убирает обводку при фокусе и активном состоянии */
+}
+/* Чердка */
+.attic {
+    background-color: #895637;
+    height: 100px;
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    padding: 0 253px;
+    box-sizing: border-box; 
+}
+.search-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.product {
+    display: block; /* По умолчанию товары отображаются */
+}
+
+.product-link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет текста */
+    display: block; /* Делаем ссылку блочным элементом */
+}
+
+.product-link:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+.no-products-message {
+    color: #F3E9DD;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.search-input {
+    font-family: Etude Noire;
+    padding: 15px; 
+    width: 60%; 
+    max-width: 800px; 
+    border: 1px solid #F3E9DD;
+    border-radius: 5px;
+    font-size: 14px; 
+    margin: 0 20px; 
+}
+.logo{
+    border: none; 
+    background: none; 
+    padding: 20;
+    margin-top: 20px; 
+    cursor: pointer;
+}
+.image-button {
+    border: none; 
+    background: none; 
+    padding: 20; 
+    cursor: pointer; 
+}
+.image-button img {
+    width: 60px; 
+    height: 60px; 
+    display: block; 
+}
+.button.catalog {
+    font-family: Etude Noire;
+    background-color: #8DC12C; 
+    border: none; 
+    padding: 15px 25px; 
+    margin: 5px; 
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px; 
+    color: #F3E9DD;
+}
+/* Каталог */
+.title {
+    font-size: 48px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.recommendations {
+    display: grid;
+    grid-template-columns: 344px 1fr; 
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.filtr {
+    grid-column: 1 / 2; 
+    grid-row: 1 / -1; 
+}
+
+.background-shape {
+    position: relative;
+    width: 344px;
+    height:500px;
+    border-radius: 20px;
+    background-color: #895637;
+}
+
+.choice-shape {
+    width: 316px; 
+    height: 48px; 
+    border-radius: 20px; 
+    background-color: #F3E9DD; 
+    border: none; 
+    padding: 0px; 
+    font-size: 16px; 
+    color: #381a08;  
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    position: absolute;
+    top: 100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    cursor: pointer; 
+}
+
+.choice-shape::after {
+    content: "▼"; 
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.choice-shape {
+    width: 316px; 
+    border-radius: 20px; 
+    background-color: #F3E9DD; 
+    padding: 10px; 
+    list-style: none; 
+    margin: 0; 
+    position: absolute;
+    top: 100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.choice-shape li {
+    padding: 10px; 
+    font-size: 16px; 
+    color: #381a08; 
+    cursor: pointer; 
+    border-bottom: 1px solid #ccc; /
+}
+
+.choice-shape li:last-child {
+    border-bottom: none; 
+}
+
+.choice-shape li:hover {
+    background-color: #e0d0c0; 
+}
+
+.price-range-container {
+    position: absolute;
+    top: 180px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 316px; 
+    text-align: center;
+}
+
+.price-range {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.price-range-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #F3E9DD;
+}
+
+.special-offers {
+    position: absolute;
+    top: 225px;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.special-offer-option {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    font-size: 16px;
+    color: #F3E9DD;
+    cursor: pointer;
+}
+
+.special-offer-option input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.button1 {
+    font-family: Etude Noire;
+    background-color: #8DC12C; 
+    border: none; 
+    padding: 15px 25px; 
+    margin: 5px; 
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px; 
+    color: #F3E9DD;
+    position: absolute;
+    bottom: 100px; 
+    left: 20%; 
+}
+
+.button2 {
+    font-family: Etude Noire;
+    background-color: #8DC12C; 
+    border: none; 
+    padding: 15px 25px; 
+    margin: 5px; 
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px; 
+    color: #F3E9DD;
+    position: absolute;
+    bottom: 20px; 
+    left: 25%; 
+}
+
+.text1{
+    font-family: Etude Noire;
+    font-size: 24px; 
+    color: #F3E9DD;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+
+.text2{
+    font-family: Etude Noire;
+    font-size: 24px; 
+    color: #F3E9DD;
+    position: absolute;
+    top: 125px;
+    left: 5%;
+}
+
+.text3{
+    font-family: Etude Noire;
+    font-size: 24px; 
+    color: #F3E9DD;
+    position: absolute;
+    top: 125px;
+    left: 5%;
+}
+
+.product-container {
+    grid-column: 2 / 3; 
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product {
+    position: relative;
+    box-shadow: 0 2px 5px #381a08;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.product-button-top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.product-button-top-right img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.discount-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #D92323;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    padding: 10px;
+    gap: 8px; 
+}
+
+.product-name {
+    font-size: 24px;
+    margin: 0; 
+    line-height: 1.2; 
+}
+
+.product-somthing {
+    font-size: 16px;
+    margin: 0; 
+    line-height: 1.2; 
+}
+
+.product-price-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.product-price {
+    font-size: 20px;
+    margin: 0; 
+}
+
+.product-price2 {
+    font-size: 20px;
+    margin: 0; 
+    text-decoration: line-through;
+}
+
+.image-button-cart {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.image-button-cart img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+/* Подвал */
+.Basement {
+    background-color: #895637;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 0 253px;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-bottom: 20px; 
+}
+
+.social-media-container {
+    display: flex;
+    gap: 65px; 
+}
+
+.image-button2 {
+    border: none;
+    background: none;
+    padding: 0; 
+    cursor: pointer;
+}
+
+.image-button2 img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.footer-text {
+    color: #F3E9DD;
+    font-size: 20px; 
+    font-family: Etude Noire, sans-serif;
+    width: 550px;
+}
+.footer-text2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    color: #F3E9DD;
+    font-size: 20px; 
+    font-family: Etude Noire, sans-serif;
+    position: absolute; 
+    right: 253px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.footer-text2 .column {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.footer-text2 h4 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+.footer-text2 p {
+    margin-bottom: 10px;
+}

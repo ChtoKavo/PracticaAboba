@@ -1,0 +1,118 @@
+body {
+    background-color: #F3E9DD; 
+    margin: 0;
+    font-family: 'Etu', sans-serif;
+    color: #333333;
+    display: flex;
+}
+@font-face {
+    font-family: 'Etu';
+    src: 
+         url('Etude\ Noire.ttf') format('truetype'); /* Для TTF */
+    font-weight: normal;
+    font-style: normal;
+}
+.sidebar {
+    width: 500px; 
+    height: 100vh; 
+    background-color: #2D2E30; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F3E9DD; 
+    margin-left: 5px; 
+}
+
+th, td {
+    border: 1px solid #333333; 
+    padding: 8px;
+    text-align: left; 
+    margin-left: 10px;
+ 
+    
+}
+
+th {
+    color: #333333; 
+}
+
+h1 {
+    color: #8DC12B;
+    text-align: right;
+    margin: 15px;
+}
+
+h3 {
+    color:  #0f1011; 
+    padding: 0px;
+    text-align: right;
+    margin:80px;
+    align-items: stretch;
+}
+
+.content {
+    flex: 1; 
+    padding: 20px;
+    margin-left: 500px; 
+}
+
+.logout-button {
+    margin-top: auto; 
+    margin-left: 250px;
+    padding: 15px;
+    background-color: #8DC12B; 
+    color: #F3E9DD; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    width: 170px; 
+    max-width: 100%;
+    font-size: 18px;
+    font-family: 'Etu', sans-serif;
+}
+.logout-button2 {
+    margin-top: auto; 
+    margin-top:15px;
+    padding: 15px;
+    background-color: #172202; 
+    color: #F3E9DD; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    width: 300px; 
+    max-width: 100%;
+    font-size: 18px;
+    font-family: 'Etu', sans-serif;
+}
+.logout-button:hover {
+    background-color: rgb(83, 189, 83); 
+}
+
+a {
+    color: #F3E9DD; 
+    text-decoration: none; 
+    display: block; 
+    width: 100%; 
+}
+a:hover {
+    text-decoration: none; 
+   
+}
+
+
+
+
+
